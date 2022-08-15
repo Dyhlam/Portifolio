@@ -15,7 +15,9 @@
     --font-secundary:'Josefin Sans', serif;
     --font-action: 'Mulish', serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .hamburguer{
     /*background-color: red;*/
     width: 2rem;
@@ -188,6 +190,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 100;    
     
 }
 .show-menu .sidebar{
@@ -544,4 +547,46 @@ header{
     cursor: pointer;
     grid-column: 2;
 
+}
+.footer {
+    width: 100%;
+    height: 10rem;
+    background-color: #17181b;
+    display: flex;
+    justify-items: center;
+
+}
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+}
+.social-list ul{
+    display: flex;
+
+}
+#link-topo{
+    position: fixed;
+    bottom: 7rem;
+    right: 3rem;
+    width: 3rem;
+    height: 2rem;
+    background: #1ef7da; 
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E); 
+    background: linear-gradient(to right, #000000, #1ef771);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #000000;
 }
